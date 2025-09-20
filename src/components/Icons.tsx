@@ -155,3 +155,45 @@ export const TwitterIcon: React.FC<IconProps> = ({
     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
   </svg>
 );
+
+export const InstagramIcon: React.FC<IconProps> = ({
+  size = 24,
+  className = '',
+  color = 'currentColor'
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+  </svg>
+);
+
+export const TelegramIcon: React.FC<IconProps> = ({
+  size = 24,
+  className = '',
+  color = 'currentColor'
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.97-.17-1-.97-.17-1.46l15.5-6.01c.72-.27 1.35.18 1.08 1.05l-2.75 12.97c-.25 1.17-.89 1.47-1.8 1.02L12.9 16.5l-1.08 1.04c-.19.18-.34.28-.66.28-.3 0-.52-.15-.52-.46z"/>
+  </svg>
+);
