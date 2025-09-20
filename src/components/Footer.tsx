@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2 lg:col-span-2 flex flex-col items-center text-center">
             <div className="flex items-center justify-center space-x-2 lg:space-x-3 mb-4">
               <img
-                src="/src/assets/ALPHA-LOGO.png"
+                src="https://coohqntmfkyzudxwyizd.supabase.co/storage/v1/object/public/images/ALPHA-LOGO.png"
                 alt="Alpha Team Logo"
                 className="w-10 h-10 lg:w-12 lg:h-12 object-contain"
               />
