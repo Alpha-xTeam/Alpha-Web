@@ -11,9 +11,11 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="md:col-span-2 lg:col-span-2 flex flex-col items-center text-center">
             <div className="flex items-center justify-center space-x-2 lg:space-x-3 mb-4">
-              <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-white to-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-xl lg:text-2xl">A</span>
-              </div>
+              <img
+                src="/src/assets/ALPHA-LOGO.png"
+                alt="Alpha Team Logo"
+                className="w-10 h-10 lg:w-12 lg:h-12 object-contain"
+              />
               <span className="text-xl lg:text-2xl font-bold gradient-text font-clash">Alpha Team</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-sm lg:max-w-md text-center text-sm lg:text-base">

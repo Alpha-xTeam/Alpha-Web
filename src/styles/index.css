@@ -307,6 +307,33 @@ a:active {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+/* Marquee animations for infinite carousel */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-14.285%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-14.285%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right linear infinite;
+}
+
 /* Transitions */
 .transition-all {
   transition-property: all;
@@ -397,11 +424,11 @@ a:active {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Custom text opacity */
-.text-white\/70 {
-  color: rgba(255, 255, 255, 0.7);
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
-
-.text-white\/80 {
-  color: rgba(255, 255, 255, 0.8);
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

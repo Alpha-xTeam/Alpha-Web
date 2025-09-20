@@ -19,12 +19,30 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = memo(({
         className={`flex whitespace-nowrap ${animationClass}`}
         style={{
           animationDuration: `${speed}s`,
+          animationTimingFunction: 'linear',
+          animationIterationCount: 'infinite',
+          width: '700%',
         }}
       >
-        <div className="flex flex-shrink-0 gap-4">
+        <div className="flex flex-shrink-0 gap-6">
           {children}
         </div>
-        <div className="flex flex-shrink-0 gap-4">
+        <div className="flex flex-shrink-0 gap-6">
+          {children}
+        </div>
+        <div className="flex flex-shrink-0 gap-6">
+          {children}
+        </div>
+        <div className="flex flex-shrink-0 gap-6">
+          {children}
+        </div>
+        <div className="flex flex-shrink-0 gap-6">
+          {children}
+        </div>
+        <div className="flex flex-shrink-0 gap-6">
+          {children}
+        </div>
+        <div className="flex flex-shrink-0 gap-6">
           {children}
         </div>
       </div>
